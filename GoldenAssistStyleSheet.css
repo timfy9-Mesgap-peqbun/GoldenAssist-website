@@ -1,56 +1,120 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-background-color: blue;
-font-family: Arial, sans-serif;
-margin: 25px 50px 75px 75px;
+    background-color: #fff3e0; /* Warm off-white background */
+    color: #5a3a20; /* Warm brownish text color */
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
 }
 
-h {
-color: black;
-text-align: center;
-}
-p {
-  
-  font-size: 16px;
+header, footer {
+    background-color: #ffad5c; /* Warm orange header/footer background */
+    padding: 15px 0;
+    text-align: center;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+h1, h2, h3 {
+    color: #d46f31; /* Warm deep orange for headers */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: #bf6a30; /* Warm link color */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #924513; /* Darker link color on hover */
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #d46f31; /* Border around sections for distinction */
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d46f31; /* Input border */
+    background-color: #ffe2c4; /* Warm light background for input fields */
+    color: #5a3a20; /* Input text color */
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #d46f31; /* Submit button color */
+    color: #fff; /* Text color for submit button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #bf6a30; /* Darker submit button on hover */
+}
+
+/* Reset some styles for the menu */
+ul.menu, ul.menu li, ul.menu a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 ul.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #black;
+    display: flex; /* Makes the list items align horizontally */
+    background-color: #ffad5c; /* Warm orange background */
+    border: 1px solid #d46f31; /* Border around the entire navigation bar */
+    justify-content: center; /* Centers the items horizontally */
 }
 
-li.menu {
-  float: left;
+ul.menu li {
+    border-right: 1px solid #d46f31; /* Right border for each list item */
 }
 
-li.menu a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+ul.menu li:last-child {
+    border-right: none; /* Removes the right border for the last item */
 }
 
-
-li a:hover {
-  background-color: black;
+ul.menu a {
+    display: block;
+    padding: 15px 20px; /* Adds space around links for better clickability */
+    color: #5a3a20; /* Warm brownish text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
 }
 
-.active {
-  background-color: black;
+ul.menu li.active a, /* Styles for the active menu item */
+ul.menu a:hover {
+    background-color: #d46f31; /* Changes background on hover */
+    color: #fff; /* Changes text color on hover */
 }
 
-
-li {
-  border-right: 1px solid black;
-}
 
